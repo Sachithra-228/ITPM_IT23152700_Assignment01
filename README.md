@@ -110,6 +110,10 @@ npm run capture:media
 - Videos: `test/gallery-ui/public/assets/videos/{id}.webm`  
 - The deck supports status/type filters; Video tab now shows all cases.
 
+Preview of the evidence deck:
+
+![Evidence deck overview](test/gallery-ui/public/assets/readme-deck.png)
+
 **Capture terminal output while you run:**
 ```bash
 cd test
