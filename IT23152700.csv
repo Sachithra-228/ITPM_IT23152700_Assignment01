@@ -1,0 +1,149 @@
+﻿TC ID,Test case name,Input length type,Input,Expected output,Actual output,Status,Accuracy justification/ Description of issue type,What is covered by the test
+Pos_Fun_0001,Simple daily activity statement,M,Mama adha campus yanne cricket practice eka nisaa,මම අද campus යන්නෙ cricket practice එක නිසා,මම අද campus යන්නෙ cricket practice එක නිසා,Pass,• Sentence meaning is correctly preserved.,• Daily language usage
+,,,,,,,• Sinhala grammar and word order are accurate.,• Simple sentence
+,,,,,,,• English sports terms remain readable.,• M (31–299 characters)
+,,,,,,,• No unexpected character loss observed.,• Accuracy validation
+Pos_Fun_0002,Tourism planning statement,M,Api nuwara eliya trip ekak plan karanavaa.,අපි නුවර එලිය trip එකක් plan කරනවා.,අපි නුවර එලිය trip එකක් plan කරනවා.,Pass,• Place reference is preserved correctly.,• Names / places / common English words
+,,,,,,,• Sentence structure remains intact.,• Simple sentence
+,,,,,,,• Mixed English words do not disrupt conversion.,• M (31–299 characters)
+,,,,,,,• Punctuation is preserved as expected.,• Accuracy validation
+Pos_Fun_0003,Compound sentence with weather disruption,M,"Api galle giyaa, namuth vaessa nisaa beach ekata yanna baeri unaa","අපි galle ගියා, නමුත් වැස්ස නිසා beach එකට යන්න බැරි උනා","අපි galle ගියා, නමුත් වැස්ස නිසා beach එකට යන්න බැරි උනා",Pass,• Compound structure is preserved correctly.,• Daily language usage
+,,,,,,,• Contrast connector is converted accurately.,• Compound sentence
+,,,,,,,• Key meaning (rain causing change in plan) is preserved.,• M (31–299 characters)
+,,,,,,,• English place/activity words remain readable.,• Accuracy validation
+Pos_Fun_0004,Study-related compound sentence,M,"Mama paadam karaa, ehema unath exam eka amaruyi","මම පාඩම් කරා, එහෙම උනත් exam එක අමරුයි","මම පාඩම් කරා, එහෙම උනත් exam එක අමරුයි",Pass,• Academic context is preserved.,• Daily language usage
+,,,,,,,• Connector phrase is converted correctly.,• Compound sentence
+,,,,,,,• English term 'exam' remains readable.,• M (31–299 characters)
+,,,,,,,• No punctuation or spacing issues observed.,• Accuracy validation
+Pos_Fun_0005,Invitation using reported speech,M,"Oyaa enna kivvaa, ehema nam api film eka balamu","ඔයා එන්න කිව්වා, එහෙම නම් අපි film එක බලමු","ඔයා එන්න කිව්වා, එහෙම නම් අපි film එක බලමු",Pass,• Reported speech is converted correctly.,• Greeting / request / response
+,,,,,,,• Sentence flow remains natural.,• Compound sentence
+,,,,,,,• Informal invitation tone is preserved.,• M (31–299 characters)
+,,,,,,,• Word segmentation remains correct.,• Accuracy validation
+Pos_Fun_0006,Conditional celebration after match,M,Oyaa match eka dhinnoth api adha raee celebrate karamu,ඔයා match එක දින්නොත් අපි අද රෑ celebrate කරමු,ඔයා match එක දින්නොත් අපි අද රෑ celebrate කරමු,Pass,• Conditional clause is converted correctly.,• Daily language usage
+,,,,,,,• Time expression is preserved.,• Complex sentence
+,,,,,,,• Sports context meaning is maintained.,• M (31–299 characters)
+,,,,,,,• No unwanted English substitution observed.,• Accuracy validation
+Pos_Fun_0007,Traffic-based conditional lateness,M,Traffic godak thibboth mama late venavaa,Traffic ගොඩක් තිබ්බොත් මම late වෙනවා,Traffic ගොඩක් තිබ්බොත් මම late වෙනවා,Pass,• Conditional structure is preserved.,• Daily language usage
+,,,,,,,• English loanwords remain readable.,• Complex sentence
+,,,,,,,• Meaning is clear and accurate.,• M (31–299 characters)
+,,,,,,,• No spelling distortions observed.,• Accuracy validation
+Pos_Fun_0008,Informal travel/outing question,M,Oyaa adha evening galle face ekata yanna inne,ඔයා අද evening galle face එකට යන්න ඉන්නේ,ඔයා අද evening galle face එකට යන්න ඉන්නේ,Pass,• Question intent is preserved.,• Greeting / request / response
+,,,,,,,• Word order is correct in Sinhala.,• Interrogative (question)
+,,,,,,,• Place reference remains readable.,• M (31–299 characters)
+,,,,,,,• No punctuation loss observed.,• Accuracy validation
+Pos_Fun_0009,Exam schedule question,M,Api next week exam eka karanavadha?,අපි next week exam එක කරනවද?,අපි next week exam එක කරනවද?,Pass,• Question form is preserved.,• Daily language usage
+,,,,,,,• Punctuation (?) remains correctly placed.,• Interrogative (question)
+,,,,,,,• Mixed English terms remain readable.,• M (31–299 characters)
+,,,,,,,• Sentence meaning is accurate.,• Accuracy validation
+Pos_Fun_0010,Budget review question,M,Oyaa mee budget eka hariyata kiyavala thiyenavadha?,ඔයා මේ budget එක හරියට කියවල තියෙනවද?,ඔයා මේ budget එක හරියට කියවල තියෙනවද?,Pass,• Question meaning is preserved.,• Daily language usage
+,,,,,,,• Verb form is converted correctly.,• Interrogative (question)
+,,,,,,,• Sinhala spelling is consistent.,• M (31–299 characters)
+,,,,,,,• Question mark remains correctly placed.,• Accuracy validation
+Pos_Fun_0011,Instruction to check files before meeting,M,Meeting eka patan ganna kalin files tika check karanna,Meeting එක පටන් ගන්න කලින් files ටික check කරන්න,Meeting එක පටන් ගන්න කලින් files ටික check කරන්න,Pass,• Imperative tone is preserved.,• Daily language usage
+,,,,,,,• Ordering of actions remains clear.,• Imperative (command)
+,,,,,,,• English technical terms remain readable.,• M (31–299 characters)
+,,,,,,,• No spacing issues observed.,• Accuracy validation
+Pos_Fun_0012,Police checkpoint warning instruction,M,"Issarahata yanna, police check ekak thiyenavaa","ඉස්සරහට යන්න, police check එකක් තියෙනවා","ඉස්සරහට යන්න, police check එකක් තියෙනවා",Pass,• Command meaning is preserved.,• Daily language usage
+,,,,,,,• Comma punctuation is preserved.,• Imperative (command)
+,,,,,,,• Sinhala transliteration is accurate.,• M (31–299 characters)
+,,,,,,,• Mixed English terms do not disrupt output.,• Accuracy validation
+Pos_Fun_0013,Work statement with government office,M,Mama adha work karanavaa government office ekata,මම අද work කරනවා government office එකට,මම අද work කරනවා government office එකට,Pass,• Meaning is preserved correctly.,• Daily language usage
+,,,,,,,• Present tense is conveyed accurately.,• Present tense / Past tense / Future tense
+,,,,,,,• English workplace terms remain readable.,• M (31–299 characters)
+,,,,,,,• No unexpected capitalization changes.,• Accuracy validation
+Pos_Fun_0014,Campus project in progress,M,Api campus ekee project eka karanavaa,අපි campus එකේ project එක කරනවා,අපි campus එකේ project එක කරනවා,Pass,• Meaning is preserved.,• Daily language usage
+,,,,,,,• Postposition usage is correct.,• Present tense / Past tense / Future tense
+,,,,,,,• English term 'project' remains readable.,• M (31–299 characters)
+,,,,,,,• Output is clean with correct spacing.,• Accuracy validation
+Pos_Fun_0015,Weather update for Colombo,M,vaessa adha vahinavaa colombo paeththe,වැස්ස අද වහිනවා colombo පැත්තෙ,වැස්ස අද වහිනවා colombo පැත්තෙ,Pass,• Weather meaning is preserved.,• Daily language usage
+,,,,,,,• Location reference remains readable.,• Present tense / Past tense / Future tense
+,,,,,,,• Present tense is correctly represented.,• M (31–299 characters)
+,,,,,,,• Output maintains correct word segmentation.,• Accuracy validation
+Pos_Fun_0016,Past travel to Kandy temple,M,Api iiyee kandy giyaa temple eka balanna,අපි ඊයේ kandy ගියා temple එක බලන්න,අපි ඊයේ kandy ගියා temple එක බලන්න,Pass,• Past tense meaning is preserved.,• Names / places / common English words
+,,,,,,,• Place name remains readable.,• Present tense / Past tense / Future tense
+,,,,,,,• Sentence order is correct.,• M (31–299 characters)
+,,,,,,,• No punctuation/spacing issues.,• Accuracy validation
+Pos_Fun_0017,Past exam success statement,M,Mama last week exam eka pass unaa,මම last week exam එක pass උනා,මම last week exam එක pass උනා,Pass,• Meaning is preserved.,• Daily language usage
+,,,,,,,• Past tense is clear.,• Present tense / Past tense / Future tense
+,,,,,,,• English term 'exam' remains readable.,• M (31–299 characters)
+,,,,,,,• Output is consistent with expected spacing.,• Accuracy validation
+Pos_Fun_0018,Missed bus update,M,Eyaata adha udhee bus eka miss unaa,එයාට අද උදේ bus එක miss උනා,එයාට අද උදේ bus එක miss උනා,Pass,• Time reference is preserved.,• Daily language usage
+,,,,,,,• Meaning is accurate.,• Present tense / Past tense / Future tense
+,,,,,,,• English term 'bus' remains readable.,• M (31–299 characters)
+,,,,,,,• No transliteration errors observed.,• Accuracy validation
+Pos_Fun_0019,Future trip suggestion to Sigiriya,S,Api heta sigiriye yamu,අපි හෙට සිගිරියෙ යමු,අපි හෙට සිගිරියෙ යමු,Pass,• Future intent is preserved.,• Names / places / common English words
+,,,,,,,• Place name is rendered correctly.,• Present tense / Past tense / Future tense
+,,,,,,,• Sentence is natural and clear.,• S (≤30 characters)
+,,,,,,,• No character substitution observed.,• Accuracy validation
+Pos_Fun_0020,Future study plan for masters,M,Mama next year masters karanna hadhanavaa,මම next year masters කරන්න හදනවා,මම next year masters කරන්න හදනවා,Pass,• Future plan meaning is preserved.,• Daily language usage
+,,,,,,,• Verb phrase is converted correctly.,• Present tense / Past tense / Future tense
+,,,,,,,• English academic term remains readable.,• M (31–299 characters)
+,,,,,,,• Spacing is preserved.,• Accuracy validation
+Pos_Fun_0021,Future tax policy change,M,Government eka next month tax venas karanavaa,Government එක next month tax වෙනස් කරනවා,Government එක next month tax වෙනස් කරනවා,Pass,• Meaning is preserved.,• Daily language usage
+,,,,,,,• Future intent is clear.,• Present tense / Past tense / Future tense
+,,,,,,,• English term 'tax' remains readable.,• M (31–299 characters)
+,,,,,,,• No transliteration distortions observed.,• Accuracy validation
+Pos_Fun_0022,Negation: avoiding politics discussion,M,Api politics gaena kathaa karanne nae,අපි politics ගැන කතා කරන්නේ නැ,අපි politics ගැන කතා කරන්නේ නැ,Pass,• Negation meaning is preserved.,• Daily language usage
+,,,,,,,• Sentence remains grammatically correct.,• Negation (negative form)
+,,,,,,,• English term 'politics' remains readable.,• M (31–299 characters)
+,,,,,,,• No punctuation loss observed.,• Accuracy validation
+Pos_Fun_0023,Training attendance statement,M,Mama adha training ekata yanavaa,මම අද training එකට යනවා,මම අද training එකට යනවා,Pass,• Meaning is preserved.,• Daily language usage
+,,,,,,,• Present tense is correct.,• Present tense / Past tense / Future tense
+,,,,,,,• English term 'training' remains readable.,• M (31–299 characters)
+,,,,,,,• Output matches expected spelling.,• Accuracy validation
+Pos_Fun_0024,Question about tomorrow presentation,M,Oyaa heta presentation eka karanavadha?,ඔයා හෙට presentation එක කරනවද?,ඔයා හෙට presentation එක කරනවද?,Pass,• Question intent is preserved.,• Greeting / request / response
+,,,,,,,• Question mark remains correctly placed.,• Interrogative (question)
+,,,,,,,• English term 'presentation' remains readable.,• M (31–299 characters)
+,,,,,,,• Sinhala spelling is consistent.,• Accuracy validation
+Pos_Fun_0025,Suggestion to check election results,S,Api election result eka balamu,අපි election result එක බලමු,අපි election result එක බලමු,Pass,• Meaning is preserved.,• Daily language usage
+,,,,,,,• Sentence is clear and natural.,• Simple sentence
+,,,,,,,• English terms remain readable.,• S (≤30 characters)
+,,,,,,,• No spacing issues observed.,• Accuracy validation
+Neg_Fun_0001,Capital letter causes partial English retention,S,Ape amma adha pol gaththa,අපේ අම්ම අද පොල් ගත්තා,Ape අම්ම අද පොල් ගත්තා,Fail,• Capital letter causes the first word to remain in English.,• Typographical error handling
+,,,,,,,• System transliterates the rest of the sentence correctly.,• Simple sentence
+,,,,,,,"• Results in mixed-script output, reducing accuracy.",• S (≤30 characters)
+,,,,,,,• Issue aligns with capitalization handling weakness.,• Robustness validation
+Neg_Fun_0002,Capital V breaks Sinhala letter mapping,M,Vaessa vahinna patan gaththoth api trip eka cancel karanavaa,වැස්ස වහින්න පටන් ගත්තොත් අපි trip එක cancel කරනවා,Vඇස්ස වහින්න පටන් ගත්තොත් අපි trip එක cancel කරනවා,Fail,• Capital 'V' is treated as an English character.,• Typographical error handling
+,,,,,,,• It corrupts the Sinhala rendering of the first word.,• Complex sentence
+,,,,,,,• Remaining text is converted correctly.,• M (31–299 characters)
+,,,,,,,• Shows sensitivity to capitalization at word start.,• Robustness validation
+Neg_Fun_0003,Capital prefix prevents correct conversion,S,Vඅහාම umbrella එක අරන් එන්න,වහාම umbrella එක අරන් එන්න,Vඅහාම umbrella එක අරන් එන්න,Fail,• Leading 'V' is interpreted as English and not transliterated.,• Typographical error handling
+,,,,,,,• Produces mixed-script output for a key Sinhala word.,• Imperative (command)
+,,,,,,,• Command meaning is partially preserved but accuracy fails.,• S (≤30 characters)
+,,,,,,,• Demonstrates capitalization/mahaprana ambiguity issue.,• Robustness validation
+Neg_Fun_0004,English abbreviation transliterated incorrectly,M,Mama adha tv ekee match eka balanne naee,මම අද TV  එකේ match එක බලන්නෙ නෑ,මම අද ට්ව් එකේ match එක බලන්නෙ නෑ,Fail,• Abbreviation 'TV/tv' is transliterated into Sinhala letters unexpectedly.,• Punctuation / numbers
+,,,,,,,• Expected behavior is to preserve the English abbreviation.,• Negation (negative form)
+,,,,,,,• Causes unnatural output ('ට්ව්') and accuracy mismatch.,• M (31–299 characters)
+,,,,,,,• Negation structure is otherwise correct.,• Robustness validation
+Neg_Fun_0005,Proper noun not transliterated,M,Api adha Kandy giyaa Peradeniya campus eka balanna,අපි අද Kandy ගියා පේරාදෙණිය campus එක බලන්න,අපි අද Kandy ගියා Peradeniya campus එක බලන්න,Fail,• Place name 'Peradeniya' remains in English in actual output.,• Names / places / common English words
+,,,,,,,• Expected output uses Sinhala spelling for the place name.,• Present tense / Past tense / Future tense
+,,,,,,,• Shows inconsistency in handling Sri Lankan location names.,• M (31–299 characters)
+,,,,,,,• Sentence tense and structure remain correct.,• Robustness validation
+Neg_Fun_0006,Missing space causes word-merge error,S,mathak karala hetaenna,මතක් කරල හෙට එන්න,මතක් කරල හෙටැන්න,Fail,• Joined words prevent proper segmentation.,• Formatting (spaces / line breaks / paragraph)
+,,,,,,,• System produces incorrect Sinhala word form ('හෙටැන්න').,• Imperative (command)
+,,,,,,,• Meaning is partially affected due to wrong separation.,• S (≤30 characters)
+,,,,,,,• Demonstrates missing-space robustness limitation.,• Robustness validation
+Neg_Fun_0007,Incorrect consonant mapping in repeated word,S,Poddak poddak indhala yamu,පොඩ්ඩක් පොඩ්ඩක් ඉන්දල යමු,ඵොඩ්ඩක් පොඩ්ඩක් ඉන්දල යමු,Fail,• System mis-maps one repeated word ('ඵොඩ්ඩක්').,• Word combination / phrase pattern
+,,,,,,,• Inconsistent transliteration for the same token.,• Simple sentence
+,,,,,,,• Meaning is preserved but spelling accuracy fails.,• S (≤30 characters)
+,,,,,,,• Shows weakness in letter mapping for some sounds.,• Robustness validation
+Neg_Fun_0008,Plural suffix and mixed-language handling failure,M,Sri lanka tourism eka adha slowly vaedunath vaessa saha economic prashna nisaa godak touristsla travel plans venas karaa,ශ්‍රී ලංකා tourism එක අද slowly වැඩුනත් වැස්ස සහ economic ප්‍රශ්න නිසා ගොඩක් tourists ල travel plans වෙනස් කරා,ස්‍රි ලන්ක tourism එක අද slowly වැඩුනත් වැස්ස සහ economic ප්‍රශ්න නිසා ගොඩක් ටුරිස්ට්ස්ල travel plans වෙනස් කරා,Fail,• Plural form 'touristsla' is not handled consistently.,• Mixed Singlish + English
+,,,,,,,• Actual output splits into 'tourists ල' causing grammar issues.,• Plural form
+,,,,,,,• Mixed English + Sinhala causes transliteration mismatch.,• M (31–299 characters)
+,,,,,,,• Shows limitations in morphological (plural) handling.,• Robustness validation
+Neg_Fun_0009,Plural form over-transliteration in academic sentence,M,Campus ekee final year studentsla adha projects submit karanna inne namuth internet issues nisaa samahara aya late venavaa,Campus එකේ final year students ල අද projects submit කරන්න ඉන්නේ නමුත් internet issues නිසා සමහර අය late වෙනවා,Campus එකේ final year ස්ටුඩෙන්ට්ස්ල අද projects submit කරන්න ඉන්නේ නමුත් internet issues නිසා සමහර අය late වෙනවා,Fail,• 'studentsla' is rendered inconsistently (over-transliterated).,• Mixed Singlish + English
+,,,,,,,• Plural marker handling differs from expected output.,• Plural form
+,,,,,,,"• Mixed technical terms remain, but plural morphology fails.",• M (31–299 characters)
+,,,,,,,• Demonstrates instability with English+Sinhala plural forms.,• Robustness validation
+Neg_Fun_0010,Ambiguous Singlish spelling for family term,M,Seeya adha night late venavaa vaeda nisaa,සීයා අද night late වෙනවා වැඩ නිසා,සේය අද night late වෙනවා වැඩ නිසා,Fail,• 'Seeya' is transliterated incorrectly in actual output.,• Daily language usage
+,,,,,,,"• Correct Sinhala requires a different Singlish spelling (e.g., 'siiya').",• Simple sentence
+,,,,,,,• Changes the intended family meaning.,• M (31–299 characters)
+,,,,,,,• Highlights ambiguity in Singlish spelling expectations.,• Robustness validation
+Pos_UI_0001,Sinhala output updates automatically in real time,S,Mama adha campus yanne naee,"Sinhala output should update automatically character by character while typing, without clicking a button.","Sinhala output should update automatically character by character while typing, without clicking a button.",Pass,• Sinhala output appears instantly as the user types,• Empty/cleared input handling
+,,,,,,,• No manual “Convert” action is required,• Simple sentence
+,,,,,,,• UI remains responsive during typing,• S (≤30 characters)
+,,,,,,,• Output updates correctly for partial input,• Real-time output update behavior
+Pos_UI_0002,Clearing input field resets Sinhala output,S,Type a Singlish sentence and then delete all characters.,Sinhala output field should become empty immediately when input is cleared.,Sinhala output field should become empty immediately when input is cleared.,Pass,• Output clears automatically when input is deleted,• Empty/cleared input handling
+,,,,,,,• No residual Sinhala text remains,• Simple sentence
+,,,,,,,• UI behaves consistently with user actions,• S (≤30 characters)
+,,,,,,,• No delay or freezing observed,• Real-time output update behavior
