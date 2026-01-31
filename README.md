@@ -5,164 +5,137 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
-This project focuses on automated functional and UI testing of a **Singlish to Sinhala real-time translation web application** using **Playwright**.
+Automated functional and UI testing of the **Singlish to Sinhala real-time translation web app** using **Playwright**.
 
-### The goal is to:
+Goals:
+- ✅ Validate correct translations for valid Singlish inputs (positive cases)
+- ✅ Identify/document limitations for invalid or ambiguous inputs (negative cases)
+- ✅ Record execution results using the provided template
 
-- ✅ Validate correct translations for valid Singlish inputs (Positive test cases)
-- ✅ Identify and document system limitations when handling invalid, ambiguous, or inconsistent inputs (Negative test cases)
-- ✅ Record execution results using the test case template provided in Appendix 2
-
-**The target system under test is:**  
-👉 [https://www.swifttranslator.com/](https://www.swifttranslator.com/)
+Target under test: <https://www.swifttranslator.com/>
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 IT23152700/
 ├── IT23152700.csv
 ├── IT23152700.xlsx
+├── repository_link.txt
 └── test/
-    ├── node_modules/
-    ├── package-lock.json
     ├── package.json
     ├── playwright.config.js
-    ├── test-results/
-    │   ├── .last-run.json
-    │   ├── singlish_to_sinhala-Singli-228d1--transliterated-incorrectly/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-26313-prevents-correct-conversion/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-3b25f-sh-spelling-for-family-term/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-5f0a5-ration-in-academic-sentence/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-ad6c0-nt-mapping-in-repeated-word/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-ae8ea-d-language-handling-failure/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-c6c10-per-noun-not-transliterated/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-dc601-s-partial-English-retention/
-    │   │   └── error-context.md
-    │   ├── singlish_to_sinhala-Singli-e6ec1-ace-causes-word-merge-error/
-    │   │   └── error-context.md
-    │   └── singlish_to_sinhala-Singli-f85ee-eaks-Sinhala-letter-mapping/
-    │       └── error-context.md
-    ├── testdata/
-    │   └── testCases_minimal.json
-    └── tests/
-        └── singlish_to_sinhala.spec.js
+    ├── testdata/testCases_minimal.json
+    ├── tests/singlish_to_sinhala.spec.js
+    ├── test-results/              # Playwright error contexts
+    └── gallery-ui/                # Evidence deck (screenshots + videos)
 ```
 
 ---
 
-## 📄 Description of Key Files
+## Key Files
 
-### `IT23152700.xlsx`
-Contains all test cases and final execution results recorded according to **Appendix 2**.
-
-### `IT23152700.csv`
-Source dataset used to construct JSON-based automated test cases.
-
-### `testdata/testCases_minimal.json`
-JSON file containing all test cases used by Playwright automation.
-
-### `tests/singlish_to_sinhala.spec.js`
-Main Playwright test script that:
-- Reads test cases from JSON
-- Inputs Singlish text into the website
-- Captures Sinhala output
-- Validates actual vs expected output
-
-### `test-results/`
-Automatically generated Playwright execution artifacts including:
-- Failure screenshots
-- Error context logs for negative test cases
+- `IT23152700.xlsx` – source of final recorded results.  
+- `IT23152700.csv` – dataset used to build JSON test cases.  
+- `testdata/testCases_minimal.json` – inputs/expectations consumed by Playwright.  
+- `tests/singlish_to_sinhala.spec.js` – main Playwright spec (data-driven).  
+- `test/gallery-ui/` – Vite/React evidence viewer with all screenshots + videos.
 
 ---
 
-## 🧪 Test Coverage Summary
+## Test Coverage Summary (latest run)
 
-| Test Type                    | Count | Result              |
-|------------------------------|-------|---------------------|
-| Positive Functional Tests    | 25    | ✅ Passed           |
-| Negative Functional Tests    | 10    | ❌ Failed (Expected)|
-| **Total Tests**              | **35**| **✔**              |
+| Test Type            | Count | Result            |
+|----------------------|-------|-------------------|
+| Positive functional  | 25    | ✅ Passed         |
+| Negative functional  | 10    | ❌ Expected fail  |
+| UI                   | 2     | ✅ Passed         |
+| **Total**            | **37**| **27 Pass / 10 Fail** |
 
-### Key Observed Limitations (Negative Tests)
-
-- ❌ Capital letters breaking Sinhala character mapping
-- ❌ English abbreviations (e.g., TV) transliterated incorrectly
-- ❌ Proper nouns not converted to Sinhala
-- ❌ Missing spaces causing merged word errors
-- ❌ Plural suffix (la) over-transliteration
-- ❌ Ambiguous Singlish spellings producing incorrect Sinhala output
+Key limitations observed (negative set):
+- Capital letters can break Sinhala mapping.  
+- English abbreviations (e.g., TV) transliterated incorrectly.  
+- Proper nouns often stay unconverted.  
+- Missing spaces cause merged-word errors.  
+- Plural suffix “la” can over-transliterate.  
+- Ambiguous Singlish spellings yield inconsistent Sinhala.
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
-### 1️⃣ Navigate to the test folder
 ```bash
 cd test
-```
-
-### 2️⃣ Install dependencies
-```bash
 npm install
-```
-
-### 3️⃣ Install Playwright browsers
-```bash
 npx playwright install
 ```
 
 ---
 
-## ▶️ Running the Tests
+## Running Tests
 
-### Run all tests in headed mode
-```bash
-npx playwright test --headed
-```
-
-### Run tests in headless mode
+Headless:
 ```bash
 npx playwright test
 ```
 
----
-
-## 📊 Test Results Recording
-
-All execution results have been manually recorded in:
-
-**IT23152700.xlsx**
-
-- **Actual Output** and **Status** columns are filled based on Playwright execution output.
+Headed:
+```bash
+npx playwright test --headed
+```
 
 ---
 
-## 🔗 Git Repository Access
+## Evidence Deck (screenshots + videos)
 
-The full Playwright project repository (including scripts, configuration files, and test data) is **publicly accessible**.
+The gallery lives at `test/gallery-ui` (Vite/React).
 
-📄 **The Git repository link is provided in a separate text file as required.**
+Run locally:
+```bash
+cd test/gallery-ui
+npm install
+npm run dev -- --host --port 4173
+# open http://localhost:4173
+```
 
-⚠️ **Note:** The repository is public and accessible for marking purposes.
+Regenerate screenshots + videos for all 37 test cases:
+```bash
+cd test
+npm run capture:media
+```
+- Screenshots: `test/gallery-ui/public/assets/screens/{id}.png`  
+- Videos: `test/gallery-ui/public/assets/videos/{id}.webm`  
+- The deck supports status/type filters; Video tab now shows all cases.
+
+**Capture terminal output while you run:**
+```bash
+cd test
+mkdir -p logs
+npm run capture:media | tee logs/capture-run-$(date +%Y%m%d-%H%M).log
+npx playwright test      | tee logs/test-run-$(date +%Y%m%d-%H%M).log
+```
+These logs let reviewers see the terminal output alongside the site evidence.
 
 ---
 
-## ✅ Conclusion
+## Test Results Recording
 
-This project successfully demonstrates:
+Execution outcomes are documented in **IT23152700.xlsx** (Actual Output + Status columns).
 
-- ✅ Structured test case design
-- ✅ Real-time UI automation using Playwright
-- ✅ Accurate identification of functional limitations
-- ✅ Proper execution result documentation aligned with assignment guidelines
+---
+
+## Git Repository
+
+Public repo link is stored in `repository_link.txt` (for marking access).
+
+---
+
+## Conclusion
+
+- ✅ Structured, data-driven Playwright tests  
+- ✅ Real-time UI interaction and full media capture (screenshots + videos)  
+- ✅ Clear evidence deck for reviewers  
+- ✅ Documented functional gaps and recorded results aligned with assignment requirements  

@@ -12,6 +12,7 @@ playwright-report/
 test-results.json
 screenshots/
 videos/
+!test/gallery-ui/public/assets/videos/
 
 # Environment Variables
 .env
